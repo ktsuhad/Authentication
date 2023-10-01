@@ -11,6 +11,7 @@ connectionDatabase(); //db connection
 const PORT = process.env.PORT || 3000; //port declaration
 const app = express();
 app.use(cors());
+app.use(express.json())
 
 app.use("/api/v1/auth", router);
 
